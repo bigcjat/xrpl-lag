@@ -53,7 +53,7 @@ async def connect_to_websocket(url, identifier):
 
 async def main():
     await asyncio.gather(
-        connect_to_websocket(url1, "Local Validator"),
+        connect_to_websocket(url1, "Local Node"),
         connect_to_websocket(url2, "XRPL Cluster")
     )
 
