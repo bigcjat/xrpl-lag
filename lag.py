@@ -40,7 +40,7 @@ async def connect_to_websocket(url, identifier):
                     first_responder = identifier if time_diff > 0 else other_identifier
                     time_diff = abs(time_diff)
 
-                    color = LIME if first_responder == "Local Validator" else RED
+                    color = LIME if first_responder == "Local Node" else RED
                     ledger_info_str = colored(f"Ledger {ledger_index}", color)
                     time_diff_str = colored(f"{time_diff:.2f} seconds", color)
                     first_responder_str = colored(first_responder, color)
